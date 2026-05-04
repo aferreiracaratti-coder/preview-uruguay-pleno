@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uruguay Pleno Experiencias</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <svg aria-hidden="true" class="sprite">
+      <symbol id="leaf" viewBox="0 0 24 24">
+        <path d="M4.5 19.5c8.7.6 14.3-5 15-15-10 .7-15.6 6.3-15 15Z" />
+        <path d="M5 19 15.5 8.5" />
+      </symbol>
+      <symbol id="calendar" viewBox="0 0 24 24">
+        <path d="M7 3v4M17 3v4M4.5 9.5h15M6 5h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z" />
+        <path d="m9 15 2 2 4-4" />
+      </symbol>
+      <symbol id="globe" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" />
+        <path d="M3 12h18M12 3c2.4 2.5 3.6 5.5 3.6 9S14.4 18.5 12 21M12 3c-2.4 2.5-3.6 5.5-3.6 9S9.6 18.5 12 21" />
+      </symbol>
+      <symbol id="sprout" viewBox="0 0 24 24">
+        <path d="M12 21V9" />
+        <path d="M12 13c-5-.2-7.4-2.8-8-8 5.2.6 7.8 3 8 8Z" />
+        <path d="M12 11c.2-4.8 2.7-7.2 8-8-.7 5.2-3.2 7.6-8 8Z" />
+      </symbol>
+      <symbol id="compass" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" />
+        <path d="m15.8 8.2-2.4 6.4-6.4 2.4 2.4-6.4 6.4-2.4Z" />
+      </symbol>
+      <symbol id="walker" viewBox="0 0 24 24">
+        <circle cx="13" cy="4" r="2" />
+        <path d="m10 21 2-7-3-3 3-5 4 2 2 4" />
+        <path d="m8 13-2 3M13 14l4 7" />
+      </symbol>
+      <symbol id="paddle" viewBox="0 0 24 24">
+        <path d="M5 19 19 5" />
+        <path d="M5.2 18.8c-1.6.8-2.8.6-3.4-.1-.7-.7-.8-1.8 0-3.4 1.6-.8 2.8-.6 3.4.1.7.7.8 1.8 0 3.4Z" />
+        <path d="M18.8 5.2c1.6-.8 2.8-.6 3.4.1.7.7.8 1.8 0 3.4-1.6.8-2.8.6-3.4-.1-.7-.7-.8-1.8 0-3.4Z" />
+      </symbol>
+      <symbol id="home" viewBox="0 0 24 24">
+        <path d="m3 11 9-7 9 7" />
+        <path d="M5.5 10v10h13V10" />
+        <path d="M9.5 20v-6h5v6" />
+      </symbol>
+      <symbol id="clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" />
+        <path d="M12 7v5l3 2" />
+      </symbol>
+      <symbol id="users" viewBox="0 0 24 24">
+        <path d="M16 19c0-2.2-1.8-4-4-4s-4 1.8-4 4" />
+        <circle cx="12" cy="9" r="3" />
+        <path d="M21 19c0-1.8-1.2-3.3-3-3.8M16.5 6.4a2.8 2.8 0 0 1 0 5.2" />
+        <path d="M3 19c0-1.8 1.2-3.3 3-3.8M7.5 6.4a2.8 2.8 0 0 0 0 5.2" />
+      </symbol>
+      <symbol id="chart" viewBox="0 0 24 24">
+        <path d="M4 20h16" />
+        <path d="M6 16v4M11 12v8M16 7v13" />
+        <path d="m5 10 5-4 4 3 5-6" />
+      </symbol>
+      <symbol id="check" viewBox="0 0 24 24">
+        <path d="m5 12 4 4 10-10" />
+      </symbol>
+      <symbol id="arrow-left" viewBox="0 0 24 24">
+        <path d="M15 18 9 12l6-6" />
+      </symbol>
+      <symbol id="arrow-right" viewBox="0 0 24 24">
+        <path d="m9 18 6-6-6-6" />
+      </symbol>
+      <symbol id="instagram" viewBox="0 0 24 24">
+        <rect x="4" y="4" width="16" height="16" rx="4" />
+        <circle cx="12" cy="12" r="3.5" />
+        <path d="M17 7.5h.01" />
+      </symbol>
+      <symbol id="facebook" viewBox="0 0 24 24">
+        <path d="M14 8h2V4h-3a5 5 0 0 0-5 5v3H6v4h2v4h4v-4h3l1-4h-4V9a1 1 0 0 1 1-1Z" />
+      </symbol>
+      <symbol id="whatsapp" viewBox="0 0 24 24">
+        <path d="M5.6 18.4A8.7 8.7 0 1 1 9 20l-4 1 1-2.6Z" />
+        <path d="M9.6 8.6c.2-.4.5-.4.8-.3l.8 1.8c.1.2 0 .5-.2.7l-.5.5c.6 1.2 1.5 2.1 2.8 2.8l.6-.6c.2-.2.5-.3.8-.1l1.7.8c.3.1.4.5.3.8-.4 1-1.2 1.5-2.2 1.3-3.4-.8-5.7-3.1-6.5-6.5-.2-.8.4-1.7 1.6-2.2Z" />
+      </symbol>
+    </svg>
+
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Uruguay Pleno">
+        <span class="brand-mark"><svg><use href="#leaf" /></svg></span>
+        <span>
+          <strong>Uruguay Pleno</strong>
+          <small>Experiencias</small>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Principal">
+        <a href="#">Inicio</a>
+        <a href="#experiencias">Experiencias</a>
+        <a href="#viajes">Viajes a medida</a>
+        <a href="#sobre-mi">Sobre mi</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="button button-primary header-cta" href="#reservar">
+        <svg><use href="#calendar" /></svg>
+        Reservar
+      </a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>Conectá con Uruguay a través de experiencias auténticas</h1>
+          <p>Naturaleza, cultura y territorio en propuestas diseñadas con enfoque sostenible.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#experiencias">
+              <svg><use href="#leaf" /></svg>
+              Ver experiencias
+            </a>
+            <a class="button button-light" href="#viajes">Diseñar mi viaje</a>
+          </div>
+          <div class="language-note">
+            <span><svg><use href="#globe" /></svg> Tours en español y portugués</span>
+            <span>Inglés básico disponible o con guía colaborador</span>
+          </div>
+        </div>
+        <div class="stamp" aria-label="Turismo consciente Uruguay Pleno">
+          <span>Turismo consciente</span>
+          <svg><use href="#leaf" /></svg>
+          <span>Uruguay Pleno</span>
+        </div>
+      </section>
+
+      <section class="values" aria-label="Valores de la marca">
+        <article>
+          <span class="round-icon"><svg><use href="#leaf" /></svg></span>
+          <div>
+            <h2>Naturaleza, sostenibilidad y territorio</h2>
+            <p>Propuestas diseñadas con respeto por el entorno, valorizando paisajes, comunidades y cultura local.</p>
+          </div>
+        </article>
+        <article>
+          <span class="round-icon"><svg><use href="#sprout" /></svg></span>
+          <div>
+            <h2>Vivencias reales y aprendizaje</h2>
+            <p>Caminatas, actividades al aire libre, talleres y encuentros que generan conexión auténtica.</p>
+          </div>
+        </article>
+        <article>
+          <span class="round-icon"><svg><use href="#compass" /></svg></span>
+          <div>
+            <h2>Diseño de viajes a medida</h2>
+            <p>Creamos itinerarios personalizados y te acompañamos antes, durante y después de tu experiencia.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="section experiences" id="experiencias">
+        <div class="section-heading">
+          <h2>Experiencias destacadas</h2>
+          <svg><use href="#leaf" /></svg>
+        </div>
+        <div class="experience-grid">
+          <article class="experience-card">
+            <img src="./assets/images/coast-walk.jpg" alt="Grupo caminando por la costa" />
+            <span class="card-icon"><svg><use href="#walker" /></svg></span>
+            <div class="card-body">
+              <h3>Caminata interpretativa en la costa</h3>
+              <p>Recorremos paisajes únicos mientras aprendemos sobre la flora, fauna e historia del lugar.</p>
+              <div class="meta">
+                <span><svg><use href="#clock" /></svg>3 hs</span>
+                <span><svg><use href="#chart" /></svg>Todos los niveles</span>
+              </div>
+              <div class="price-row">
+                <strong>US$ 45</strong>
+                <a class="button button-primary compact" href="#reservar">Reservar</a>
+              </div>
+            </div>
+          </article>
+          <article class="experience-card">
+            <img src="./assets/images/lagoon-kayak.jpg" alt="Persona remando en kayak al atardecer" />
+            <span class="card-icon"><svg><use href="#paddle" /></svg></span>
+            <div class="card-body">
+              <h3>Remada en la laguna</h3>
+              <p>Una experiencia de conexión y silencio en las aguas tranquilas de nuestras lagunas.</p>
+              <div class="meta">
+                <span><svg><use href="#clock" /></svg>2.5 hs</span>
+                <span><svg><use href="#users" /></svg>Participantes</span>
+              </div>
+              <div class="price-row">
+                <strong>US$ 50</strong>
+                <a class="button button-primary compact" href="#reservar">Reservar</a>
+              </div>
+            </div>
+          </article>
+          <article class="experience-card">
+            <img src="./assets/images/rural-table.jpg" alt="Encuentro rural alrededor de una mesa" />
+            <span class="card-icon"><svg><use href="#home" /></svg></span>
+            <div class="card-body">
+              <h3>Encuentro rural y sabores locales</h3>
+              <p>Compartimos historias, tradiciones y sabores de la mano de productores locales.</p>
+              <div class="meta">
+                <span><svg><use href="#clock" /></svg>4 hs</span>
+                <span><svg><use href="#users" /></svg>Todas las edades</span>
+              </div>
+              <div class="price-row">
+                <strong>US$ 65</strong>
+                <a class="button button-primary compact" href="#reservar">Reservar</a>
+              </div>
+            </div>
+          </article>
+          <article class="experience-card">
+            <img src="./assets/images/nature-workshop.jpg" alt="Taller de plantas nativas" />
+            <span class="card-icon"><svg><use href="#leaf" /></svg></span>
+            <div class="card-body">
+              <h3>Taller de naturaleza y bienestar</h3>
+              <p>Actividades para reconectar con vos mismo y con el entorno natural.</p>
+              <div class="meta">
+                <span><svg><use href="#clock" /></svg>2 hs</span>
+                <span><svg><use href="#chart" /></svg>Todos los niveles</span>
+              </div>
+              <div class="price-row">
+                <strong>US$ 40</strong>
+                <a class="button button-primary compact" href="#reservar">Reservar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <a class="button button-outline" href="#experiencias">Ver todas las experiencias</a>
+      </section>
+
+      <section class="advice" id="viajes">
+        <span class="large-line-icon"><svg><use href="#leaf" /></svg></span>
+        <div>
+          <h2>¿Tenés un proyecto turístico?</h2>
+          <p>Acompaño a emprendimientos y alojamientos en el diseño de experiencias auténticas y sostenibles.</p>
+        </div>
+        <ul class="check-list">
+          <li><svg><use href="#check" /></svg>Asesoramiento personalizado</li>
+          <li><svg><use href="#check" /></svg>Diseño de experiencias</li>
+          <li><svg><use href="#check" /></svg>Capacitación y acompañamiento</li>
+          <li><svg><use href="#check" /></svg>Desarrollo de proyectos sostenibles</li>
+        </ul>
+        <div class="advice-action">
+          <a class="button button-primary" href="#contacto">Quiero asesoramiento</a>
+          <p>Completá el formulario y conversemos sobre tu proyecto.</p>
+        </div>
+      </section>
+
+      <section class="about" id="sobre-mi">
+        <img src="./assets/images/guide-portrait.jpg" alt="Mercedes, guía turística" />
+        <div class="about-copy">
+          <p class="eyebrow">Hola, soy Mercedes <svg><use href="#leaf" /></svg></p>
+          <h2>Más de 15 años acompañando viajes y creando experiencias</h2>
+          <p>Soy guía turística y diseñadora de experiencias de viaje. Mi propósito es generar encuentros auténticos entre las personas y los lugares, promoviendo un turismo sostenible, consciente y transformador.</p>
+          <a class="button button-primary" href="#sobre-mi">Conocé más sobre mí</a>
+        </div>
+        <ul class="credentials">
+          <li><svg><use href="#calendar" /></svg><span>+15 años de experiencia en turismo</span></li>
+          <li><svg><use href="#users" /></svg><span>Guía turística habilitada</span></li>
+          <li><svg><use href="#sprout" /></svg><span>Especialista en diseño de itinerarios</span></li>
+          <li><svg><use href="#leaf" /></svg><span>Enfoque en turismo sostenible</span></li>
+        </ul>
+      </section>
+
+      <section class="testimonials" aria-label="Testimonios">
+        <h2>Lo que dicen quienes ya vivieron la experiencia</h2>
+        <div class="testimonial-row">
+          <button class="circle-button" type="button" data-testimonial-prev aria-label="Testimonio anterior"><svg><use href="#arrow-left" /></svg></button>
+          <blockquote class="is-active">
+            <img src="./assets/images/guide-portrait.jpg" alt="" />
+            <p>"Una experiencia hermosa, conectamos con la naturaleza y con la cultura local de una manera muy auténtica."</p>
+            <cite>Mariana, Buenos Aires</cite>
+          </blockquote>
+          <blockquote>
+            <img src="./assets/images/coast-walk.jpg" alt="" />
+            <p>"Mercedes tiene una sensibilidad única para mostrar lo mejor de cada lugar y hacerte sentir parte."</p>
+            <cite>Luciano, Montevideo</cite>
+          </blockquote>
+          <blockquote>
+            <img src="./assets/images/nature-workshop.jpg" alt="" />
+            <p>"Súper recomendable. Los paseos son increíbles y se nota el amor por lo que hace."</p>
+            <cite>Florencia, Córdoba</cite>
+          </blockquote>
+          <button class="circle-button" type="button" data-testimonial-next aria-label="Testimonio siguiente"><svg><use href="#arrow-right" /></svg></button>
+        </div>
+      </section>
+
+      <section class="booking-strip" id="reservar">
+        <div>
+          <h2>¿Listo para tu próxima experiencia?</h2>
+          <p>Reservá tu lugar o diseñemos juntos un viaje a tu medida.</p>
+        </div>
+        <div class="booking-actions">
+          <a class="button button-light" href="https://wa.me/" target="_blank" rel="noreferrer">
+            <svg><use href="#whatsapp" /></svg>
+            Escribime por WhatsApp
+          </a>
+          <a class="button button-primary" href="#contacto">
+            <svg><use href="#calendar" /></svg>
+            Reservar ahora
+          </a>
+        </div>
+        <div class="booking-features">
+          <span><svg><use href="#calendar" /></svg>Pago seguro con Mercado Pago</span>
+          <span><svg><use href="#calendar" /></svg>Reservá tu lugar con seña</span>
+          <span><svg><use href="#users" /></svg>Atención personalizada</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacto">
+      <a class="brand" href="#" aria-label="Uruguay Pleno">
+        <span class="brand-mark"><svg><use href="#leaf" /></svg></span>
+        <span>
+          <strong>Uruguay Pleno</strong>
+          <small>Experiencias</small>
+        </span>
+      </a>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><svg><use href="#instagram" /></svg></a>
+        <a href="#" aria-label="Facebook"><svg><use href="#facebook" /></svg></a>
+      </div>
+      <nav aria-label="Footer">
+        <a href="#">Inicio</a>
+        <a href="#experiencias">Experiencias</a>
+        <a href="#viajes">Viajes a medida</a>
+        <a href="#sobre-mi">Sobre mi</a>
+        <a href="#">Blog</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="payment">
+        <span>Pagá seguro con</span>
+        <strong>mercado pago</strong>
+      </div>
+      <p class="copyright">© 2026 Uruguay Pleno Experiencias. Todos los derechos reservados.</p>
+    </footer>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
